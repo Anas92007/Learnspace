@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Space — Your Next Skill Starts with the Right Space</title>
+  <meta name="description" content="Discover practical courses, follow structured learning paths, and build career-ready skills with Learn Space. Multi-page free, guided education roadmap platform.">
+  <meta name="keywords" content="learn space, online courses, web development, data science, machine learning, learning paths, tech roadmaps">
+  <meta name="author" content="Learn Space Team">
+
+  <!-- Favicon (Inline SVG Data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2314213D'/%3E%3Cpath d='M7 6h6v18H7zM7 19h13a3 3 0 0 1 3 3v2H7z' fill='%23625BEE'/%3E%3Cellipse cx='16' cy='14' rx='10' ry='4' transform='rotate(-25 16 14)' stroke='%2338C6A4' stroke-width='2' fill='none'/%3E%3Ccircle cx='23' cy='8' r='3' fill='%2338C6A4'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Plus Jakarta Sans for crisp, modern SaaS aesthetics -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN (Permitted technology) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Learn Space Custom Design System Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="site-container">
+      <!-- Hidden checkbox for Pure CSS mobile navigation toggle -->
+      <input type="checkbox" id="nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+
+      <nav class="navbar-container" aria-label="Main Navigation">
+        <!-- Original Learn Space Redesigned Logo & Wordmark -->
+        <a href="index.html" class="brand-logo" aria-label="Learn Space Homepage">
+          <div class="logo-symbol" title="Learn Space Logo">
+            <!-- Bespoke Open Book + Orbital Ring + Stylized L SVG Icon -->
+            <svg class="logo-svg" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Stylized 'L' Spine & Foundation of Open Book -->
+              <rect x="5.5" y="4" width="7" height="18" rx="2" fill="#625BEE"/>
+              <path d="M5.5 17.5H19C20.38 17.5 21.5 18.62 21.5 20C21.5 21.1 20.6 22 19.5 22H7.5C6.4 22 5.5 21.1 5.5 20V17.5Z" fill="#4F46E5"/>
+              <!-- Right Page of Open Book -->
+              <path d="M13.5 5.5C15.2 4.6 17.8 4.2 20.8 4.6C21.5 4.7 22 5.2 22 5.9V18.2C19.2 17.8 16.5 18.2 13.5 19.2V5.5Z" fill="#F1F0FF" stroke="#625BEE" stroke-width="1.2"/>
+              <!-- Orbital Ring Representing Discovery -->
+              <ellipse cx="14" cy="13" rx="10.5" ry="4.2" transform="rotate(-25 14 13)" stroke="#38C6A4" stroke-width="1.4" stroke-dasharray="3 1.5"/>
+              <!-- Orbital Spark Node -->
+              <circle cx="21.5" cy="7.5" r="2" fill="#38C6A4"/>
+              <circle cx="21.5" cy="7.5" r="0.8" fill="#FFFFFF"/>
+            </svg>
+          </div>
+          <span class="brand-text">Learn<span class="space-accent">Space</span><span class="spark-dot"></span></span>
+        </a>
+
+        <!-- Center Navigation Links (Real Multi-Page Routing) -->
+        <ul class="nav-links-desktop">
+          <li><a href="index.html" class="nav-item-link active">Home</a></li>
+          <li><a href="courses.html" class="nav-item-link">Explore Courses</a></li>
+          <li><a href="learning-paths.html" class="nav-item-link">Learning Paths</a></li>
+          <li><a href="about.html" class="nav-item-link">About</a></li>
+        </ul>
+
+        <!-- Right Action Buttons -->
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-ghost">Log In</a>
+          <a href="signup.html" class="btn btn-secondary btn-sm">Sign Up</a>
+          <a href="courses.html" class="btn btn-primary btn-sm">Get Started</a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button (CSS-controlled via #nav-toggle) -->
+        <label for="nav-toggle" class="mobile-nav-label" aria-label="Toggle Navigation">
+          <span class="hamburger-line"></span>
+        </label>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- =======================================================================
+         2. HERO SECTION
+         ======================================================================= -->
+    <section id="home" class="hero-section">
+      <!-- Decorative Orbit Accents (Behind Content) -->
+      <div class="hero-backdrop-orbit" aria-hidden="true"></div>
+      <div class="hero-backdrop-orbit-inner" aria-hidden="true"></div>
+
+      <div class="site-container">
+        <div class="hero-grid">
+          <!-- Left Column: Copy & Calls to Action -->
+          <div class="hero-content">
+            <div class="section-eyebrow">
+              <span aria-hidden="true">✨</span> LEARN • BUILD • GROW
+            </div>
+
+            <h1 class="hero-title">
+              Your next skill starts <br class="d-none d-md-block">
+              with the <span class="highlight-text">right space.</span>
+            </h1>
+
+            <p class="hero-desc">
+              Discover practical courses, follow guided learning paths, and build the skills that move your future forward.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="courses.html" class="btn btn-primary btn-lg">
+                Explore Courses
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="learning-paths.html" class="btn btn-secondary btn-lg">
+                Discover Learning Paths
+              </a>
+            </div>
+
+            <!-- Trust Statement & Social Proof -->
+            <div class="hero-trust-bar">
+              <div class="trust-avatar-group" aria-hidden="true">
+                <div class="trust-avatar trust-avatar-1">AK</div>
+                <div class="trust-avatar trust-avatar-2">MR</div>
+                <div class="trust-avatar trust-avatar-3">SL</div>
+                <div class="trust-avatar trust-avatar-4">+5k</div>
+              </div>
+              <div class="trust-text">
+                <span class="stars-rating" aria-label="5 star rating">★★★★★</span>
+                <strong>4.9/5 Rating</strong> • 50,000+ Active Learners Worldwide
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Illustrative Learning Dashboard (HTML & CSS) -->
+          <div class="hero-visual-wrapper">
+            <!-- Floating Milestone Unlocked Card -->
+            <div class="floating-milestone-card" aria-hidden="true">
+              <div class="floating-milestone-icon">✓</div>
+              <div class="floating-milestone-text">
+                <h6>Milestone Unlocked!</h6>
+                <span>CSS Flexbox &amp; Grid Master</span>
+              </div>
+            </div>
+
+            <!-- Main Interactive Dashboard Preview Card -->
+            <div class="dashboard-card" role="region" aria-label="Learning Dashboard Preview">
+              <!-- Dashboard Header -->
+              <div class="dash-header">
+                <div class="dash-user-info">
+                  <div class="dash-user-badge" aria-hidden="true">LS</div>
+                  <div>
+                    <div class="dash-user-name">Alex Rivera</div>
+                    <div class="dash-user-subtitle">Full-Stack Path • Active</div>
+                  </div>
+                </div>
+                <div class="dash-status-pill">
+                  <span class="pulse-dot" aria-hidden="true"></span>
+                  In Progress
+                </div>
+              </div>
+
+              <!-- Course In Progress Panel -->
+              <div class="dash-featured-course">
+                <div class="course-preview-header">
+                  <div>
+                    <span class="course-preview-tag">Currently Studying</span>
+                    <h2 class="course-preview-title">Complete Web Development</h2>
+                  </div>
+                  <a href="courses.html" class="play-button-visual" title="View Full Course Curriculum" aria-label="View Full Course Curriculum">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  </a>
+                </div>
+
+                <!-- Learning Path Progress Bar -->
+                <div class="dash-progress-wrap">
+                  <div class="dash-progress-meta">
+                    <span>Course Completion</span>
+                    <span>72% Completed</span>
+                  </div>
+                  <div class="dash-progress-track" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
+                    <div class="dash-progress-fill" style="width: 72%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Metrics Row: Circular Progress Ring & Weekly Study Streak -->
+              <div class="dash-metrics-row">
+                <!-- Circular Progress Ring (Pure CSS conic-gradient) -->
+                <div class="dash-metric-card">
+                  <div class="circle-progress-container">
+                    <div class="css-circle-ring" aria-label="78% Weekly Goal Accomplished">
+                      <div class="css-circle-inner">78%</div>
+                    </div>
+                    <div class="circle-progress-text">
+                      <h5>Weekly Goal</h5>
+                      <p>8.5 / 10 hours</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Weekly Study Streak Visual -->
+                <div class="dash-metric-card streak-metric">
+                  <h5>
+                    <span aria-hidden="true">🔥</span> 5-Day Study Streak
+                  </h5>
+                  <div class="streak-days-row" aria-label="Weekly streak: Mon to Fri completed">
+                    <div class="streak-day completed" title="Monday">M</div>
+                    <div class="streak-day completed" title="Tuesday">T</div>
+                    <div class="streak-day completed" title="Wednesday">W</div>
+                    <div class="streak-day completed" title="Thursday">T</div>
+                    <div class="streak-day active" title="Friday">F</div>
+                    <div class="streak-day inactive" title="Saturday">S</div>
+                    <div class="streak-day inactive" title="Sunday">S</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Topic Labels / Skills Tags -->
+              <div class="dash-topics-bar">
+                <span class="dash-topic-pill active">HTML5 Semantics</span>
+                <span class="dash-topic-pill active">CSS3 Grid</span>
+                <span class="dash-topic-pill">Bootstrap 5</span>
+                <span class="dash-topic-pill">Portfolio Capstone</span>
+              </div>
+
+              <div class="text-center mt-2">
+                <span class="prototype-tag">Illustrative Demo Dashboard</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. SEARCH AND COURSE CATEGORIES SECTION
+         ======================================================================= -->
+    <section id="search-discovery" class="search-section section-spacing-sm">
+      <div class="site-container">
+        <div class="section-header">
+          <div class="section-eyebrow">DISCOVER CONTENT</div>
+          <h2 class="section-title">Find your next learning adventure.</h2>
+          <p class="section-desc">
+            Explore subjects, discover new interests, and start building practical skills.
+          </p>
+        </div>
+
+        <!-- Search Bar navigating to courses.html -->
+        <div class="search-box-wrapper">
+          <form class="search-input-group" action="courses.html" method="GET" role="search" aria-label="Course Search">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input 
+              type="text" 
+              name="q" 
+              id="course-search-field"
+              class="search-input-field" 
+              placeholder="Search courses, skills, or topics..." 
+              aria-label="Search courses, skills, or topics"
+            >
+            <button type="submit" class="btn btn-primary search-submit-btn">
+              Explore Courses
+            </button>
+          </form>
+          <div class="search-disclaimer-text">
+            Direct navigation enabled • Click any category chip below to jump to the full course catalog.
+          </div>
+        </div>
+
+        <!-- 6 Category Filter Chips Linking to courses.html -->
+        <div class="category-chips-wrapper" role="navigation" aria-label="Course Categories">
+          <a href="courses.html" class="category-chip active">
+            <span>📚</span> All Courses
+          </a>
+          <a href="courses.html#web-development" class="category-chip">
+            <span>💻</span> Web Development
+          </a>
+          <a href="courses.html#data-science" class="category-chip">
+            <span>📊</span> Data Science
+          </a>
+          <a href="courses.html#ai" class="category-chip">
+            <span>🤖</span> Artificial Intelligence
+          </a>
+          <a href="courses.html#design" class="category-chip">
+            <span>🎨</span> UI/UX Design
+          </a>
+          <a href="courses.html#business" class="category-chip">
+            <span>📈</span> Business
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. POPULAR COURSES SECTION (EXACTLY 3 CARDS WITH EXTERNAL LINKS)
+         ======================================================================= -->
+    <section id="courses" class="courses-section section-spacing">
+      <div class="site-container">
+        <div class="section-header">
+          <div class="section-eyebrow">CURATED SELECTION</div>
+          <h2 class="section-title">Popular courses to get you started</h2>
+          <p class="section-desc">
+            Build practical skills with learning resources selected for your next step.
+          </p>
+        </div>
+
+        <div class="course-grid-3">
+          <!-- COURSE CARD 1: Web Development -->
+          <article class="course-card">
+            <div class="course-card-visual visual-webdev">
+              <span class="course-badge badge-popular">Popular</span>
+              <span class="course-category-pill">Web Development</span>
+              
+              <img class="course-photo" src="assets/images/web-development.jpg" alt="Developer working at a code editor" loading="lazy" width="768" height="512">
+            </div>
+
+            <div class="course-card-body">
+              <h3 class="course-card-title">Complete Web Development</h3>
+              <p class="course-card-desc">
+                Master modern HTML5 semantics, CSS3 Grid and Flexbox layouts, responsive design patterns, and build a real portfolio.
+              </p>
+
+              <div class="course-meta-row">
+                <div class="course-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                  <span>Beginner</span>
+                </div>
+                <div class="course-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>12 weeks</span>
+                </div>
+              </div>
+
+              <div class="course-card-footer">
+                <a 
+                  href="https://www.freecodecamp.org/learn/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="btn-view-course"
+                  aria-label="View Complete Web Development course on freeCodeCamp (opens in new tab)"
+                >
+                  View Course
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <div class="resource-notice">External Resource • freeCodeCamp.org</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- COURSE CARD 2: Data Science -->
+          <article class="course-card">
+            <div class="course-card-visual visual-datasci">
+              <span class="course-badge badge-new">New</span>
+              <span class="course-category-pill">Data Science</span>
+              
+              <img class="course-photo" src="assets/images/data-analytics.jpg" alt="Laptop displaying data charts and analytics" loading="lazy" width="768" height="512">
+            </div>
+
+            <div class="course-card-body">
+              <h3 class="course-card-title">Python for Data Science</h3>
+              <p class="course-card-desc">
+                Learn foundational Python syntax, data structures, analysis with Pandas, and practical statistical exploration.
+              </p>
+
+              <div class="course-meta-row">
+                <div class="course-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                  <span>Beginner to Intermediate</span>
+                </div>
+                <div class="course-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>8 weeks</span>
+                </div>
+              </div>
+
+              <div class="course-card-footer">
+                <a 
+                  href="https://www.kaggle.com/learn/python" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="btn-view-course"
+                  aria-label="View Python for Data Science course on Kaggle (opens in new tab)"
+                >
+                  View Course
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <div class="resource-notice">External Resource • Kaggle Learn</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- COURSE CARD 3: Machine Learning -->
+          <article class="course-card">
+            <div class="course-card-visual visual-ml">
+              <span class="course-badge badge-trending">Trending</span>
+              <span class="course-category-pill">Artificial Intelligence</span>
+              
+              <img class="course-photo" src="assets/images/artificial-intelligence.jpg" alt="Blue violet artificial intelligence neural network visualization" loading="lazy" width="768" height="512">
+            </div>
+
+            <div class="course-card-body">
+              <h3 class="course-card-title">Machine Learning Foundations</h3>
+              <p class="course-card-desc">
+                Grasp core ML algorithms, regression, decision trees, feature engineering, and model validation techniques.
+              </p>
+
+              <div class="course-meta-row">
+                <div class="course-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                  <span>Intermediate</span>
+                </div>
+                <div class="course-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>10 weeks</span>
+                </div>
+              </div>
+
+              <div class="course-card-footer">
+                <a 
+                  href="https://www.kaggle.com/learn/intro-to-machine-learning" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="btn-view-course"
+                  aria-label="View Machine Learning Foundations course on Kaggle (opens in new tab)"
+                >
+                  View Course
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <div class="resource-notice">External Resource • Kaggle Learn</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="courses.html" class="btn btn-secondary btn-lg">
+            View All Courses in Catalog →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. LEARNING PATHS PREVIEW SECTION
+         ======================================================================= -->
+    <section id="paths" class="paths-section section-spacing">
+      <div class="site-container">
+        <div class="section-header">
+          <div class="section-eyebrow">STRUCTURED ROADMAPS</div>
+          <h2 class="section-title">Your roadmap to what’s next.</h2>
+          <p class="section-desc">
+            Follow a structured path from fundamentals to practical projects.
+          </p>
+        </div>
+
+        <div class="paths-grid">
+          <!-- PATH 1: Frontend Developer -->
+          <article class="path-card path-card-frontend">
+            <div class="path-header">
+              <div class="path-icon-badge path-icon-frontend" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <h3 class="path-title">Frontend Developer</h3>
+              <p class="path-desc">Build responsive, interactive, and visually stunning web interfaces from scratch.</p>
+              
+              <div class="path-meta-tags">
+                <span class="path-meta-tag tag-indigo">Beginner</span>
+                <span class="path-meta-tag tag-indigo">16 Weeks</span>
+                <span class="path-meta-tag tag-indigo">4 Milestones</span>
+              </div>
+            </div>
+
+            <div class="path-milestones">
+              <div class="milestones-title">Learning Progression</div>
+              
+              <div class="milestone-item">
+                <div class="milestone-bullet bullet-done" title="Milestone Completed">✓</div>
+                <div class="milestone-label">
+                  HTML Fundamentals
+                  <span>Semantic markup, accessible forms &amp; document structure</span>
+                </div>
+              </div>
+
+              <div class="milestone-item">
+                <div class="milestone-bullet bullet-done" title="Milestone Completed">✓</div>
+                <div class="milestone-label">
+                  CSS &amp; Responsive Design
+                  <span>Modern Flexbox, CSS Grid, media queries &amp; animations</span>
+                </div>
+              </div>
+
+              <div class="milestone-item">
+                <div class="milestone-bullet bullet-current" title="In Progress">3</div>
+                <div class="milestone-label">
+                  Bootstrap 5
+                  <span>Rapid layout systems, utility classes &amp; components</span>
+                </div>
+              </div>
+
+              <div class="milestone-item">
+                <div class="milestone-bullet bullet-upcoming" title="Upcoming">4</div>
+                <div class="milestone-label">
+                  Portfolio Project
+                  <span>End-to-end showcase ready for real client or job demos</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="path-progress-container">
+              <div class="path-progress-header">
+                <span>Path Progression</span>
+                <span class="text-primary">75% Complete</span>
+              </div>
+              <div class="path-progress-track">
+                <div class="path-progress-bar bar-frontend"></div>
+              </div>
+            </div>
+
+            <div class="mt-3">
+              <a href="learning-paths.html" class="btn btn-primary w-100">
+                Explore Full Roadmap →
+              </a>
+            </div>
+          </article>
+
+          <!-- PATH 2: Backend Developer -->
+          <article class="path-card path-card-backend">
+            <div class="path-header">
+              <div class="path-icon-badge path-icon-backend" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+              <h3 class="path-title">Backend Developer</h3>
+              <p class="path-desc">Design reliable web services, manage data pipelines, and architect secure server backends.</p>
+              
+              <div class="path-meta-tags">
+                <span class="path-meta-tag tag-navy">Beginner to Intermediate</span>
+                <span class="path-meta-tag tag-navy">20 Weeks</span>
+                <span class="path-meta-tag tag-navy">4 Milestones</span>
+              </div>
+            </div>
+
+            <div class="path-milestones">
+              <div class="milestones-title">Learning Progression</div>
+              
+              <div class="milestone-item">
+                <div class="milestone-bullet bullet-done" title="Milestone Completed">✓</div>
+                <div class="milestone-label">
+                  Programming Fundamentals
+                  <span>Logic flow, variables, functions, and algorithmic basics</span>
+                </div>
+              </div>
+
+              <div class="milestone-item">
+                <div class="milestone-bullet bullet-done" title="Milestone Completed">✓</div>
+                <div class="milestone-label">
+                  Server-side Concepts
+                  <span>Environment lifecycles, HTTP requests, responses &amp; security</span>
+                </div>
+              </div>
+
+              <div class="milestone-item">
+                <div class="milestone-bullet bullet-upcoming" title="Upcoming">3</div>
+                <div class="milestone-label">
+                  APIs &amp; HTTP
+                  <span>RESTful architecture, status codes, headers &amp; routing</span>
+                </div>
+              </div>
+
+              <div class="milestone-item">
+                <div class="milestone-bullet bullet-upcoming" title="Upcoming">4</div>
+                <div class="milestone-label">
+                  Databases &amp; SQL
+                  <span>Relational data schemas, queries, migrations &amp; indexing</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="path-progress-container">
+              <div class="path-progress-header">
+                <span>Path Progression</span>
+                <span style="color: var(--color-navy);">50% Complete</span>
+              </div>
+              <div class="path-progress-track">
+                <div class="path-progress-bar bar-backend"></div>
+              </div>
+            </div>
+
+            <div class="mt-3">
+              <a href="learning-paths.html" class="btn btn-secondary w-100">
+                Explore Full Roadmap →
+              </a>
+            </div>
+          </article>
+
+          <!-- PATH 3: Machine Learning Engineer -->
+          <article class="path-card path-card-ml">
+            <div class="path-header">
+              <div class="path-icon-badge path-icon-ml" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              </div>
+              <h3 class="path-title">Machine Learning Engineer</h3>
+              <p class="path-desc">Transform numerical data into predictive algorithms, trained models, and intelligent workflows.</p>
+              
+              <div class="path-meta-tags">
+                <span class="path-meta-tag tag-mint">Intermediate</span>
+                <span class="path-meta-tag tag-mint">24 Weeks</span>
+                <span class="path-meta-tag tag-mint">4 Milestones</span>
+              </div>
+            </div>
+
+            <div class="path-milestones">
+              <div class="milestones-title">Learning Progression</div>
+              
+              <div class="milestone-item">
+                <div class="milestone-bullet bullet-done" title="Milestone Completed">✓</div>
+                <div class="milestone-label">
+                  Python Fundamentals
+                  <span>Object-oriented scripting, data structures, and CLI tools</span>
+                </div>
+              </div>
+
+              <div class="milestone-item">
+                <div class="milestone-bullet bullet-upcoming" title="Upcoming">2</div>
+                <div class="milestone-label">
+                  NumPy &amp; Pandas
+                  <span>Matrix operations, dataframe cleaning &amp; statistical slicing</span>
+                </div>
+              </div>
+
+              <div class="milestone-item">
+                <div class="milestone-bullet bullet-upcoming" title="Upcoming">3</div>
+                <div class="milestone-label">
+                  Statistics &amp; Data Prep
+                  <span>Exploratory analysis, normal distributions &amp; transformations</span>
+                </div>
+              </div>
+
+              <div class="milestone-item">
+                <div class="milestone-bullet bullet-upcoming" title="Upcoming">4</div>
+                <div class="milestone-label">
+                  Machine Learning Fundamentals
+                  <span>Supervised training, regression, classifiers &amp; loss metrics</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="path-progress-container">
+              <div class="path-progress-header">
+                <span>Path Progression</span>
+                <span style="color: var(--color-mint-dark);">25% Complete</span>
+              </div>
+              <div class="path-progress-track">
+                <div class="path-progress-bar bar-ml"></div>
+              </div>
+            </div>
+
+            <div class="mt-3">
+              <a href="learning-paths.html" class="btn btn-secondary w-100">
+                Explore Full Roadmap →
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. WHY LEARN SPACE? — BENEFITS & ANALYTICS PREVIEW
+         ======================================================================= -->
+    <section id="benefits" class="benefits-section section-spacing">
+      <div class="site-container">
+        <div class="benefits-grid">
+          <!-- Left Column: Copy & 4 Benefits -->
+          <div class="benefits-content">
+            <div class="section-eyebrow">THE LEARN SPACE ADVANTAGE</div>
+            <h2 class="section-title">Everything you need to keep growing.</h2>
+            <p class="section-desc">
+              Less confusion. More direction. Better learning habits.
+            </p>
+
+            <div class="benefits-list">
+              <div class="benefit-item">
+                <div class="benefit-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                </div>
+                <div class="benefit-text">
+                  <h4>Structured Learning</h4>
+                  <p>Clear progression from fundamentals to advanced topics without overwhelming information rabbit holes.</p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div class="benefit-text">
+                  <h4>Learn at Your Pace</h4>
+                  <p>Flexible learning with self-paced milestones that fit naturally alongside your work or school schedule.</p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+                <div class="benefit-text">
+                  <h4>Project-Based Practice</h4>
+                  <p>Focus on applying concepts through hands-on coding exercises, not just reading passive theory.</p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                </div>
+                <div class="benefit-text">
+                  <h4>Progress at a Glance</h4>
+                  <p>Visual milestones that help you always understand what you’ve mastered and what comes next.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Illustrative Learning Dashboard Panel -->
+          <div class="benefits-dashboard-wrapper">
+            <div class="benefits-dashboard-card" role="region" aria-label="Illustrative Student Progress Dashboard">
+              <div class="benefits-dash-header">
+                <div>
+                  <h5>Student Progress Hub</h5>
+                  <span class="text-muted" style="font-size: 0.8rem;">Weekly Momentum Summary</span>
+                </div>
+                <span class="dash-status-pill">
+                  <span class="pulse-dot" aria-hidden="true"></span>
+                  Active Track
+                </span>
+              </div>
+
+              <!-- Metric Stats Row -->
+              <div class="benefits-card-row">
+                <div class="benefits-stat-box">
+                  <div class="benefits-stat-num">88%</div>
+                  <div class="benefits-stat-label">Concept Mastery</div>
+                </div>
+                <div class="benefits-stat-box">
+                  <div class="benefits-stat-num">14 <span style="font-size: 1rem; color: #F59E0B;">🔥</span></div>
+                  <div class="benefits-stat-label">Day Study Streak</div>
+                </div>
+              </div>
+
+              <!-- Illustrative Bar Graph for Study Hours -->
+              <div class="dash-chart-mock">
+                <div class="chart-title-row">
+                  <span>Weekly Study Hours</span>
+                  <span>14.5 hrs total</span>
+                </div>
+                <div class="bars-visual" aria-hidden="true">
+                  <div class="bar-col">
+                    <div class="bar-pill" style="height: 45px;"></div>
+                    <span class="bar-day-name">Mon</span>
+                  </div>
+                  <div class="bar-col">
+                    <div class="bar-pill" style="height: 60px;"></div>
+                    <span class="bar-day-name">Tue</span>
+                  </div>
+                  <div class="bar-col">
+                    <div class="bar-pill" style="height: 35px;"></div>
+                    <span class="bar-day-name">Wed</span>
+                  </div>
+                  <div class="bar-col">
+                    <div class="bar-pill peak" style="height: 80px;"></div>
+                    <span class="bar-day-name">Thu</span>
+                  </div>
+                  <div class="bar-col">
+                    <div class="bar-pill" style="height: 55px;"></div>
+                    <span class="bar-day-name">Fri</span>
+                  </div>
+                  <div class="bar-col">
+                    <div class="bar-pill" style="height: 70px;"></div>
+                    <span class="bar-day-name">Sat</span>
+                  </div>
+                  <div class="bar-col">
+                    <div class="bar-pill" style="height: 40px;"></div>
+                    <span class="bar-day-name">Sun</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Milestone Completion Panel -->
+              <div class="dash-featured-course mb-0">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="course-preview-tag">Current Milestone</span>
+                  <span class="badge bg-success" style="font-size: 0.7rem;">75% Finished</span>
+                </div>
+                <div class="fw-bold" style="color: var(--color-navy); font-size: 0.95rem;">Building Portfolio Capstone</div>
+                <p class="text-muted mb-0" style="font-size: 0.8rem;">3 of 4 practical projects completed</p>
+              </div>
+
+              <div class="text-center mt-3">
+                <span class="prototype-tag">Illustrative Demo Content • Upcoach &amp; Simply.Coach Inspired</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. HOW IT WORKS / LEARNING EXPERIENCE SECTION
+         ======================================================================= -->
+    <section id="how-it-works" class="how-it-works-section section-spacing">
+      <div class="site-container">
+        <div class="section-header">
+          <div class="section-eyebrow">HOW IT WORKS</div>
+          <h2 class="section-title">A proven blueprint to technical mastery.</h2>
+          <p class="section-desc">
+            Follow these three simple steps to accelerate your practical skills.
+          </p>
+        </div>
+
+        <div class="steps-timeline-grid">
+          <!-- Step 01 -->
+          <div class="step-card">
+            <div class="step-number-pill">01</div>
+            <h3 class="step-title">Discover your course</h3>
+            <p class="step-desc">
+              Find a course aligned with your interests and starting skill level through curated, battle-tested learning materials.
+            </p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="step-card">
+            <div class="step-number-pill">02</div>
+            <h3 class="step-title">Follow your learning path</h3>
+            <p class="step-desc">
+              Break your learning goal into manageable, sequential milestones with zero guesswork on what topic to study next.
+            </p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="step-card">
+            <div class="step-number-pill">03</div>
+            <h3 class="step-title">Build practical projects</h3>
+            <p class="step-desc">
+              Practice your skills through hands-on code exercises, real problem sets, and work toward a portfolio project ready for employers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. STUDENT TESTIMONIALS SECTION
+         ======================================================================= -->
+    <section id="testimonials" class="testimonials-section section-spacing">
+      <div class="site-container">
+        <div class="section-header">
+          <div class="section-eyebrow">COMMUNITY VOICES</div>
+          <h2 class="section-title">Small steps. Real progress.</h2>
+          <p class="section-desc">
+            Sample experiences from learners following structured roadmaps.
+          </p>
+          <div>
+            <span class="prototype-tag">Sample Demo Testimonials</span>
+          </div>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- TESTIMONIAL 1: Featured / Prominent -->
+          <div class="testimonial-card testimonial-featured">
+            <div class="testimonial-quote-icon" aria-hidden="true">“</div>
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <blockquote class="testimonial-comment">
+              “I used to jump between random video tutorials and felt constantly lost. Learn Space’s frontend roadmap gave me the exact sequence I needed. Understanding HTML and CSS finally clicked when I built real projects instead of just copying code snippets.”
+            </blockquote>
+            <div class="testimonial-author-row">
+              <div class="testimonial-avatar avatar-sm" aria-hidden="true">SM</div>
+              <div class="author-details">
+                <h6>Sarah M.</h6>
+                <p>Career Switcher • Frontend Track</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TESTIMONIAL 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon" aria-hidden="true">“</div>
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <blockquote class="testimonial-comment">
+              “The structured milestones helped me establish a 45-minute daily study routine. Breaking down complex web topics into bite-sized steps kept me motivated all month.”
+            </blockquote>
+            <div class="testimonial-author-row">
+              <div class="testimonial-avatar avatar-dk" aria-hidden="true">DK</div>
+              <div class="author-details">
+                <h6>David K.</h6>
+                <p>CS Student • Web Development</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TESTIMONIAL 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon" aria-hidden="true">“</div>
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <blockquote class="testimonial-comment">
+              “Transitioning into data science felt intimidating with all the math and syntax. Having a clean roadmap from Python basics through Pandas made my study hours 10x more productive.”
+            </blockquote>
+            <div class="testimonial-author-row">
+              <div class="testimonial-avatar avatar-pr" aria-hidden="true">PR</div>
+              <div class="author-details">
+                <h6>Priya R.</h6>
+                <p>Data Aspirant • Data Science Track</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         9. FINAL CALL TO ACTION (CTA) SECTION
+         ======================================================================= -->
+    <section class="final-cta-section">
+      <div class="site-container">
+        <div class="cta-banner-card">
+          <div class="cta-content">
+            <div class="section-eyebrow" style="background: rgba(255,255,255,0.15); color: #FFFFFF; border-color: rgba(255,255,255,0.3);">
+              START LEARNING NOW
+            </div>
+            <h2 class="cta-title">Your future skills start with one step.</h2>
+            <p class="cta-desc">
+              Choose a course, find your path, and start learning today.
+            </p>
+            <div class="cta-buttons-row">
+              <a href="courses.html" class="btn btn-white btn-lg">Explore Courses</a>
+              <a href="learning-paths.html" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.15); color: #FFFFFF; border-color: rgba(255,255,255,0.4);">
+                View Learning Paths
+              </a>
+            </div>
+            <div class="cta-reassurance">
+              <span>✓ 100% Free &amp; Open Access</span>
+              <span>✓ No Credit Card Required</span>
+              <span>✓ Self-Paced Milestones</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       10. FOOTER
+       ========================================================================= -->
+  <footer id="about" class="site-footer">
+    <div class="site-container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" aria-label="Learn Space Homepage">
+            <div class="logo-symbol">
+              <svg class="logo-svg" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="5.5" y="4" width="7" height="18" rx="2" fill="#625BEE"/>
+                <path d="M5.5 17.5H19C20.38 17.5 21.5 18.62 21.5 20C21.5 21.1 20.6 22 19.5 22H7.5C6.4 22 5.5 21.1 5.5 20V17.5Z" fill="#4F46E5"/>
+                <path d="M13.5 5.5C15.2 4.6 17.8 4.2 20.8 4.6C21.5 4.7 22 5.2 22 5.9V18.2C19.2 17.8 16.5 18.2 13.5 19.2V5.5Z" fill="#F1F0FF" stroke="#625BEE" stroke-width="1.2"/>
+                <ellipse cx="14" cy="13" rx="10.5" ry="4.2" transform="rotate(-25 14 13)" stroke="#38C6A4" stroke-width="1.4" stroke-dasharray="3 1.5"/>
+                <circle cx="21.5" cy="7.5" r="2" fill="#38C6A4"/>
+              </svg>
+            </div>
+            <span class="brand-text">Learn<span class="space-accent">Space</span><span class="spark-dot"></span></span>
+          </a>
+          <p class="footer-mission">
+            Learn Space is a modern, student-first platform designed to help learners discover top-tier educational resources, follow guided roadmaps, and build real-world technical skills.
+          </p>
+          <div class="prototype-tag" style="background: rgba(255,255,255,0.1); color: #94A3B8;">
+            Hackathon Edition Prototype
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="courses.html" class="footer-link">Explore Courses</a></li>
+            <li><a href="learning-paths.html" class="footer-link">Learning Paths</a></li>
+            <li><a href="about.html" class="footer-link">About Learn Space</a></li>
+            <li><a href="login.html" class="footer-link">Student Login</a></li>
+            <li><a href="signup.html" class="footer-link">Create Account</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Learning Categories -->
+        <div>
+          <h4 class="footer-heading">Categories</h4>
+          <ul class="footer-links-list">
+            <li><a href="courses.html#web-development" class="footer-link">Web Development</a></li>
+            <li><a href="courses.html#data-science" class="footer-link">Data Science</a></li>
+            <li><a href="courses.html#ai" class="footer-link">Artificial Intelligence</a></li>
+            <li><a href="courses.html#design" class="footer-link">UI/UX Design</a></li>
+            <li><a href="courses.html#business" class="footer-link">Business Tech</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Platform & External Resources -->
+        <div>
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer" class="footer-link">freeCodeCamp ↗</a></li>
+            <li><a href="https://www.kaggle.com/learn" target="_blank" rel="noopener noreferrer" class="footer-link">Kaggle Learn ↗</a></li>
+            <li><a href="about.html" class="footer-link">Platform Mission</a></li>
+            <li><a href="courses.html" class="footer-link">Course Catalog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="footer-disclaimer-note">
+          © 2026 Learn Space. Built as a multi-page hackathon project. Course cards link to public educational platforms (freeCodeCamp, Kaggle). Authentication and analytics features are illustrative frontend prototypes.
+        </p>
+        <a href="#home" class="back-to-top-btn" aria-label="Back to top">
+          Back to Top ↑
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

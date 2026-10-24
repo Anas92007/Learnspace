@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Learn Space — Educational Roadmap Mission</title>
+  <meta name="description" content="Discover our mission, learning philosophy, and the principles powering Learn Space's curated tech roadmaps.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2314213D'/%3E%3Cpath d='M7 6h6v18H7zM7 19h13a3 3 0 0 1 3 3v2H7z' fill='%23625BEE'/%3E%3Cellipse cx='16' cy='14' rx='10' ry='4' transform='rotate(-25 16 14)' stroke='%2338C6A4' stroke-width='2' fill='none'/%3E%3Ccircle cx='23' cy='8' r='3' fill='%2338C6A4'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="site-container">
+      <input type="checkbox" id="nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+
+      <nav class="navbar-container" aria-label="Main Navigation">
+        <!-- Brand Logo & Wordmark -->
+        <a href="index.html" class="brand-logo" aria-label="Learn Space Homepage">
+          <div class="logo-symbol">
+            <svg class="logo-svg" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="5.5" y="4" width="7" height="18" rx="2" fill="#625BEE"/>
+              <path d="M5.5 17.5H19C20.38 17.5 21.5 18.62 21.5 20C21.5 21.1 20.6 22 19.5 22H7.5C6.4 22 5.5 21.1 5.5 20V17.5Z" fill="#4F46E5"/>
+              <path d="M13.5 5.5C15.2 4.6 17.8 4.2 20.8 4.6C21.5 4.7 22 5.2 22 5.9V18.2C19.2 17.8 16.5 18.2 13.5 19.2V5.5Z" fill="#F1F0FF" stroke="#625BEE" stroke-width="1.2"/>
+              <ellipse cx="14" cy="13" rx="10.5" ry="4.2" transform="rotate(-25 14 13)" stroke="#38C6A4" stroke-width="1.4" stroke-dasharray="3 1.5"/>
+              <circle cx="21.5" cy="7.5" r="2" fill="#38C6A4"/>
+            </svg>
+          </div>
+          <span class="brand-text">Learn<span class="space-accent">Space</span><span class="spark-dot"></span></span>
+        </a>
+
+        <!-- Center Navigation Links -->
+        <ul class="nav-links-desktop">
+          <li><a href="index.html" class="nav-item-link">Home</a></li>
+          <li><a href="courses.html" class="nav-item-link">Explore Courses</a></li>
+          <li><a href="learning-paths.html" class="nav-item-link">Learning Paths</a></li>
+          <li><a href="about.html" class="nav-item-link active">About</a></li>
+        </ul>
+
+        <!-- Right Action Buttons -->
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-ghost">Log In</a>
+          <a href="signup.html" class="btn btn-secondary btn-sm">Sign Up</a>
+          <a href="courses.html" class="btn btn-primary btn-sm">Get Started</a>
+        </div>
+
+        <label for="nav-toggle" class="mobile-nav-label" aria-label="Toggle Navigation">
+          <span class="hamburger-line"></span>
+        </label>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- =======================================================================
+         2. ABOUT HERO & MISSION STATEMENT
+         ======================================================================= -->
+    <section class="page-hero">
+      <div class="site-container">
+        <div class="page-hero-content">
+          <div class="section-eyebrow">OUR MISSION</div>
+          <h1 class="page-hero-title">Empowering Learners with Clear Roadmaps</h1>
+          <p class="page-hero-desc">
+            The internet contains virtually all the information needed to become a world-class engineer. What is missing is not content, but direction. Learn Space eliminates analysis paralysis by providing structured, curated learning roadmaps.
+          </p>
+          <div class="prototype-tag">
+            Educational Platform Hackathon Edition
+          </div>
+          <img class="page-hero-photo" src="assets/images/study.jpg" alt="Student learning with a laptop in a bright study space" width="768" height="512" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. WHAT LEARN SPACE OFFERS
+         ======================================================================= -->
+    <section class="section-spacing">
+      <div class="site-container">
+        <div class="section-header">
+          <div class="section-eyebrow">THE PLATFORM</div>
+          <h2 class="section-title">What Learn Space Delivers</h2>
+          <p class="section-desc">
+            We focus on four foundational pillars to create an effortless learning journey.
+          </p>
+        </div>
+
+        <div class="philosophy-grid">
+          <div class="philosophy-card">
+            <div class="path-icon-badge path-icon-frontend" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h4>Curated Open Knowledge</h4>
+            <p>
+              We evaluate and index only verified, publicly accessible courses from respected platforms like freeCodeCamp and Kaggle.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="path-icon-badge path-icon-backend" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+            </div>
+            <h4>Sequential Roadmaps</h4>
+            <p>
+              Instead of random tutorials, follow structured milestones where each concept logically reinforces the previous lesson.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="path-icon-badge path-icon-ml" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h4>Project-First Mentality</h4>
+            <p>
+              Theory is valuable, but coding builds confidence. Every roadmap culminates in a real capstone portfolio project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. VISUAL WORKFLOW: DISCOVER -> LEARN -> PRACTICE -> GROW
+         ======================================================================= -->
+    <section class="section-spacing" style="background-color: var(--color-white); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="site-container">
+        <div class="section-header">
+          <div class="section-eyebrow">OUR METHODOLOGY</div>
+          <h2 class="section-title">The Four-Stage Learning Journey</h2>
+          <p class="section-desc">
+            How learners navigate from zero background to confident practitioner.
+          </p>
+        </div>
+
+        <div class="workflow-cards-row">
+          <div class="workflow-card">
+            <div class="workflow-card-num">01</div>
+            <h3 class="workflow-card-title">Discover</h3>
+            <p class="workflow-card-desc">
+              Explore subject disciplines, evaluate starting skill requirements, and select a direction aligned with your goals.
+            </p>
+          </div>
+
+          <div class="workflow-card">
+            <div class="workflow-card-num">02</div>
+            <h3 class="workflow-card-title">Learn</h3>
+            <p class="workflow-card-desc">
+              Engage with curated free curriculum modules, step-by-step documentation, and verified external workshops.
+            </p>
+          </div>
+
+          <div class="workflow-card">
+            <div class="workflow-card-num">03</div>
+            <h3 class="workflow-card-title">Practice</h3>
+            <p class="workflow-card-desc">
+              Complete coding exercises, build real component layouts, write database queries, and debug real issues.
+            </p>
+          </div>
+
+          <div class="workflow-card">
+            <div class="workflow-card-num">04</div>
+            <h3 class="workflow-card-title">Grow</h3>
+            <p class="workflow-card-desc">
+              Publish capstone portfolio artifacts to GitHub, demonstrate verifiable skills, and advance your engineering career.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. LEARNING PHILOSOPHY & ETHICS
+         ======================================================================= -->
+    <section class="section-spacing">
+      <div class="site-container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="section-eyebrow">CORE BELIEFS</div>
+            <h2 class="h1 fw-bold mb-4" style="color: var(--color-navy);">Our Educational Philosophy</h2>
+            
+            <div class="mb-4">
+              <h5 class="fw-bold text-navy mb-2">1. Active Building Beats Passive Watching</h5>
+              <p class="text-muted" style="font-size: 0.95rem;">
+                Watching 50 hours of video lectures creates an illusion of competence. Writing 50 lines of code and fixing syntax bugs creates real competence.
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="fw-bold text-navy mb-2">2. Consistency Beats Cramming</h5>
+              <p class="text-muted" style="font-size: 0.95rem;">
+                45 minutes of daily focused study builds stronger neurological retention than an exhausting 10-hour marathon once every two weeks.
+              </p>
+            </div>
+
+            <div>
+              <h5 class="fw-bold text-navy mb-2">3. Open Access Beats Paywalls</h5>
+              <p class="text-muted" style="font-size: 0.95rem;">
+                We champion open-source curriculum and public platforms. Education should be universally accessible regardless of financial circumstances.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="dashboard-card" style="box-shadow: var(--shadow-lg);">
+              <h5 class="fw-bold mb-3" style="color: var(--color-navy);">Platform Transparency Statement</h5>
+              <p class="text-muted" style="font-size: 0.9rem; line-height: 1.7;">
+                Learn Space was designed and built as a 2-hour hackathon project showcasing senior frontend architecture, accessible design tokens, and clean UX.
+              </p>
+              <div class="p-3 mb-3 rounded" style="background-color: var(--color-lavender-subtle); border-left: 4px solid var(--color-primary);">
+                <div class="fw-bold text-primary mb-1" style="font-size: 0.85rem;">Honest Platform Disclosure</div>
+                <div class="text-muted" style="font-size: 0.8rem;">
+                  Learn Space is an educational directory and roadmap curation portal. We do not claim ownership of external courses, nor do we run a proprietary backend database for account storage.
+                </div>
+              </div>
+              <a href="courses.html" class="btn btn-primary w-100">Explore Open Courses →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. CLOSING CTA BANNER
+         ======================================================================= -->
+    <section class="final-cta-section">
+      <div class="site-container">
+        <div class="cta-banner-card">
+          <div class="cta-content">
+            <h2 class="cta-title">Start your learning journey today.</h2>
+            <p class="cta-desc">
+              Browse our catalog of verified courses or pick a step-by-step career roadmap.
+            </p>
+            <div class="cta-buttons-row">
+              <a href="courses.html" class="btn btn-white btn-lg">Explore Courses</a>
+              <a href="learning-paths.html" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.15); color: #FFFFFF; border-color: rgba(255,255,255,0.4);">
+                Explore Roadmaps
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       7. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" aria-label="Learn Space Homepage">
+            <div class="logo-symbol">
+              <svg class="logo-svg" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="5.5" y="4" width="7" height="18" rx="2" fill="#625BEE"/>
+                <path d="M5.5 17.5H19C20.38 17.5 21.5 18.62 21.5 20C21.5 21.1 20.6 22 19.5 22H7.5C6.4 22 5.5 21.1 5.5 20V17.5Z" fill="#4F46E5"/>
+                <path d="M13.5 5.5C15.2 4.6 17.8 4.2 20.8 4.6C21.5 4.7 22 5.2 22 5.9V18.2C19.2 17.8 16.5 18.2 13.5 19.2V5.5Z" fill="#F1F0FF" stroke="#625BEE" stroke-width="1.2"/>
+                <ellipse cx="14" cy="13" rx="10.5" ry="4.2" transform="rotate(-25 14 13)" stroke="#38C6A4" stroke-width="1.4" stroke-dasharray="3 1.5"/>
+                <circle cx="21.5" cy="7.5" r="2" fill="#38C6A4"/>
+              </svg>
+            </div>
+            <span class="brand-text">Learn<span class="space-accent">Space</span><span class="spark-dot"></span></span>
+          </a>
+          <p class="footer-mission">
+            A student-centered educational roadmap and discovery directory connecting ambitious learners with world-class, free educational tracks.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="courses.html" class="footer-link">Explore Courses</a></li>
+            <li><a href="learning-paths.html" class="footer-link">Learning Paths</a></li>
+            <li><a href="about.html" class="footer-link">About Learn Space</a></li>
+            <li><a href="login.html" class="footer-link">Log In</a></li>
+            <li><a href="signup.html" class="footer-link">Sign Up</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Philosophy</h4>
+          <ul class="footer-links-list">
+            <li><a href="about.html" class="footer-link">Active Building</a></li>
+            <li><a href="about.html" class="footer-link">Daily Consistency</a></li>
+            <li><a href="about.html" class="footer-link">Open Access</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">External Partners</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer" class="footer-link">freeCodeCamp ↗</a></li>
+            <li><a href="https://www.kaggle.com/learn" target="_blank" rel="noopener noreferrer" class="footer-link">Kaggle Learn ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="footer-disclaimer-note">
+          © 2026 Learn Space. Multi-Page Hackathon Edition. Built with semantic HTML5 and custom CSS3.
+        </p>
+        <a href="#" class="back-to-top-btn" aria-label="Back to top">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
